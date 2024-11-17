@@ -1,0 +1,16 @@
+{"time":"2024-11-16T16:35:14.863894941+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-16T16:35:14.863926448+08:00","level":"INFO","msg":"created symlink","path":"/tmp/pycharm_project_785/MulT-EHR/wandb/run-20241116_163514-xrz84tea/logs/debug-core.log"}
+{"time":"2024-11-16T16:35:14.969056722+08:00","level":"INFO","msg":"created new stream","id":"xrz84tea"}
+{"time":"2024-11-16T16:35:14.969154979+08:00","level":"INFO","msg":"stream: started","id":"xrz84tea"}
+{"time":"2024-11-16T16:35:14.969226798+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:14.969247593+08:00","level":"INFO","msg":"sender: started","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:14.969406927+08:00","level":"INFO","msg":"handler: started","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:16.031496637+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-16T16:35:16.666971834+08:00","level":"INFO","msg":"stream: closing","id":"xrz84tea"}
+{"time":"2024-11-16T16:35:16.667020346+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-16T16:35:16.667960661+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-16T16:35:18.238293802+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-16T16:35:19.0688208+08:00","level":"INFO","msg":"handler: closed","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:19.068885679+08:00","level":"INFO","msg":"sender: closed","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:19.068876508+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xrz84tea"}
+{"time":"2024-11-16T16:35:19.069023261+08:00","level":"INFO","msg":"stream: closed","id":"xrz84tea"}

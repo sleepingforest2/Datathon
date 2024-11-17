@@ -1,0 +1,16 @@
+{"time":"2024-11-16T12:02:41.414178917+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-16T12:02:41.414197171+08:00","level":"INFO","msg":"created symlink","path":"/tmp/pycharm_project_785/MulT-EHR/wandb/run-20241116_120241-d44r957z/logs/debug-core.log"}
+{"time":"2024-11-16T12:02:41.518151826+08:00","level":"INFO","msg":"created new stream","id":"d44r957z"}
+{"time":"2024-11-16T12:02:41.518199859+08:00","level":"INFO","msg":"stream: started","id":"d44r957z"}
+{"time":"2024-11-16T12:02:41.518253926+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:41.518276513+08:00","level":"INFO","msg":"handler: started","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:41.518276911+08:00","level":"INFO","msg":"sender: started","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:42.660635599+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-16T12:02:42.845349918+08:00","level":"INFO","msg":"stream: closing","id":"d44r957z"}
+{"time":"2024-11-16T12:02:42.845399827+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-16T12:02:42.846035334+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-16T12:02:47.735787006+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-16T12:02:48.815432963+08:00","level":"INFO","msg":"handler: closed","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:48.815503378+08:00","level":"INFO","msg":"sender: closed","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:48.815488192+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"d44r957z"}
+{"time":"2024-11-16T12:02:48.815588469+08:00","level":"INFO","msg":"stream: closed","id":"d44r957z"}

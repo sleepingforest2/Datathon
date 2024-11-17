@@ -1,0 +1,43 @@
+{
+  "os": "Linux-5.4.0-149-generic-x86_64-with-glibc2.17",
+  "python": "3.8.20",
+  "startedAt": "2024-11-16T19:13:48.645540Z",
+  "program": "main.py",
+  "codePath": "main.py",
+  "git": {
+    "remote": "https://github.com/HKU-MedAI/MulT-EHR.git",
+    "commit": "5740e90e8ad6a43c773105b763ccf238fb0cf26f"
+  },
+  "email": "lee.ljy@outlook.com",
+  "root": "/tmp/pycharm_project_785/MulT-EHR",
+  "host": "autodl-container-9d8d46936f-a3556aef",
+  "username": "root",
+  "executable": "/root/miniconda3/bin/python",
+  "codePathLocal": "main.py",
+  "cpu_count": 26,
+  "cpu_count_logical": 52,
+  "gpu": "Tesla V100-PCIE-32GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "19412725760"
+    }
+  },
+  "memory": {
+    "total": "230302826496"
+  },
+  "cpu": {
+    "count": 26,
+    "countLogical": 52
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla V100-PCIE-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

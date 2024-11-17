@@ -1,0 +1,86 @@
+_wandb:
+    value:
+        cli_version: 0.18.7
+        m: []
+        python_version: 3.8.20
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+                - 76
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+                - 76
+            "3":
+                - 13
+                - 15
+                - 16
+                - 23
+                - 55
+            "4": 3.8.20
+            "5": 0.18.7
+            "8":
+                - 5
+            "12": 0.18.7
+            "13": linux-x86_64
+GNN:
+    value:
+        feat_drop: 0.05
+        hidden_dim: 64
+        in_dim: 128
+        name: HGT
+        num_heads: 16
+        num_layers: 2
+        num_out_heads: 1
+        out_dim: 506
+checkpoint:
+    value:
+        path: ./checkpoints/HGT_Causal_MIMIC4_RMDL
+        save_checkpoint_freq: 2
+datasets:
+    value:
+        dataset_path: ./data/mimic3_objects/mimic4_dp.pkl
+        entity_mapping: ./data/graphs/mimic4_dp_entity_mapping.pkl
+        graph_path: ./data/graphs/mimic4_dp.pkl
+        labels_path: ./data/graphs/mimic4_dp_labels.pkl
+        name: mimic4
+        pretrained: ./data/graphs/mimic4_dp_ptr.pkl
+eval_type:
+    value: homo-graph
+gpu_ids:
+    value: "0"
+logging:
+    value:
+        mode: online
+        tags:
+            - MIMIC4
+            - MT
+name:
+    value: HGT_MTCausal_MIMIC4_RMDL
+optimizer:
+    value:
+        lr: 0.006
+        opt_method: ADAM
+        weight_decay: 0
+train:
+    value:
+        batch_size: 4096
+        causal: true
+        n_samples: 2000
+        num_epochs: 1000
+        reg: 5e-05
+        tasks:
+            - mort_pred
+            - los
+            - drug_rec
+            - readm
+        temperature: 0.005
+train_type:
+    value: causal-gnn

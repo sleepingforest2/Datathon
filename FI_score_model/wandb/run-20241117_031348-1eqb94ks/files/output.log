@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "main.py", line 58, in <module>
+    main()
+  File "main.py", line 41, in main
+    trainer = CausalGNNTrainer(config)
+  File "/tmp/pycharm_project_785/MulT-EHR/trainers/train_causal_gnn.py", line 43, in __init__
+    self.graph, self.labels, self.train_mask, self.test_mask = load_graph(
+  File "/tmp/pycharm_project_785/MulT-EHR/data.py", line 31, in load_graph
+    with open(pretrained, 'rb') as inp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/graphs/mimic4_dp_ptr.pkl'

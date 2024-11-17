@@ -1,0 +1,29 @@
+Start training GNN
+  0%|                                                                                                                                              | 0/1000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/tmp/pycharm_project_785/MulT-EHR/main.py", line 58, in <module>
+    main()
+  File "/tmp/pycharm_project_785/MulT-EHR/main.py", line 48, in main
+    trainer.train()
+  File "/tmp/pycharm_project_785/MulT-EHR/trainers/train_causal_gnn.py", line 91, in train
+    sg = self.get_subgraphs(indices, "visit")
+  File "/tmp/pycharm_project_785/MulT-EHR/trainers/train_causal_gnn.py", line 243, in get_subgraphs
+    sg = self.graph.subgraph(d).to(self.device)
+  File "/root/miniconda3/lib/python3.8/site-packages/dgl/heterograph.py", line 5714, in to
+    ret._graph = self._graph.copy_to(utils.to_dgl_context(device))
+  File "/root/miniconda3/lib/python3.8/site-packages/dgl/heterograph_index.py", line 255, in copy_to
+    return _CAPI_DGLHeteroCopyTo(self, ctx.device_type, ctx.device_id)
+  File "dgl/_ffi/_cython/./function.pxi", line 295, in dgl._ffi._cy3.core.FunctionBase.__call__
+  File "dgl/_ffi/_cython/./function.pxi", line 227, in dgl._ffi._cy3.core.FuncCall
+  File "dgl/_ffi/_cython/./function.pxi", line 217, in dgl._ffi._cy3.core.FuncCall3
+dgl._ffi.base.DGLError: [17:34:29] /opt/dgl/src/runtime/c_runtime_api.cc:82: Check failed: allow_missing: Device API cuda is not enabled. Please install the cuda version of dgl.
+Stack trace:
+  [bt] (0) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dmlc::LogMessageFatal::~LogMessageFatal()+0x67) [0x7f84367b31b7]
+  [bt] (1) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::runtime::DeviceAPIManager::GetAPI(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool)+0x2a5) [0x7f8436c0be85]
+  [bt] (2) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::runtime::DeviceAPI::Get(DGLContext, bool)+0x1ea) [0x7f8436c0889a]
+  [bt] (3) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::runtime::NDArray::Empty(std::vector<long, std::allocator<long> >, DGLDataType, DGLContext)+0x130) [0x7f8436c21e60]
+  [bt] (4) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::runtime::NDArray::CopyTo(DGLContext const&) const+0xb5) [0x7f8436c56c45]
+  [bt] (5) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::UnitGraph::CSR::CopyTo(DGLContext const&) const+0x249) [0x7f8436d55149]
+  [bt] (6) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::UnitGraph::CopyTo(std::shared_ptr<dgl::BaseHeteroGraph>, DGLContext const&)+0xff) [0x7f8436d48d3f]
+  [bt] (7) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(dgl::HeteroGraph::CopyTo(std::shared_ptr<dgl::BaseHeteroGraph>, DGLContext const&)+0xfa) [0x7f8436c62a0a]
+  [bt] (8) /root/miniconda3/lib/python3.8/site-packages/dgl/libdgl.so(+0x6226d6) [0x7f8436c736d6]

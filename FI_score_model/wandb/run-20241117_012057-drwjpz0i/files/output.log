@@ -1,0 +1,12 @@
+Start training GNN
+  0%|                                                                                                                                              | 0/1000 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 58, in <module>
+    main()
+  File "main.py", line 48, in main
+    trainer.train()
+  File "/tmp/pycharm_project_785/MulT-EHR/trainers/train_causal_gnn.py", line 99, in train
+    loss = F.binary_cross_entropy_with_logits(preds, labels) + \
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/functional.py", line 3163, in binary_cross_entropy_with_logits
+    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
+ValueError: Target size (torch.Size([118, 184])) must be the same as input size (torch.Size([118, 506]))
